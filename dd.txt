@@ -1,0 +1,17 @@
+项目名称：全球新闻发布管理系统
+起始时间：2023/11/21
+
+1.npm creat-react-app myapp 创建脚手架
+2..module.css 加 import style 加 style.item 来标识类和对应id来只影响部分组件的css文件，这叫模块化css
+3.终端npm安装sass模块 sass模块的加持可以让前面只适合类和id的拓展到标签之类的
+4.反向代理配置可以解决跨域问题，因为整个项目实际上大部分还是在浏览器跑的
+5.npm安装axios用于http请求
+6.react中内置了一个开发时候可以用的反向代理，按照官方文件配置即可设置一台反向代理服务器：src文件夹下建立setupProxy.js。然后复制一段代码，安装http-proxy-middleware模块，本质是把访问的跨域路由中的域名删掉，只写文件路由，然后在配置文件中，访问到这个文件路由的一级路由的时候，target里写上目标域名，也就是react会自动代理一台服务器帮你去取文件到本机，然后你自己访问就没有跨域限制了，写完记得重启服务器
+7."C端"（Consumer端）指的是面向普通消费者的客户群体，"B端"（Business端）指的是面向企业或商业用户的客户群体
+8.react万物皆组件，路由 本质也可以是组件，另外路由应该单独建个文件夹来管理
+9.npm下载react-router-dom
+10. HashRouter路由组件 ：使用 URL 中的哈希（#）来管理路由。http://example.com/#/path/to/page 。这种方式在旧版浏览器中具有良好的兼容性； BrowserRouter ：使用 HTML5 的 History API 来管理路由。在使用  BrowserRouter  时，URL 中的路由信息会被放置在 URL 的路径部分http://example.com/path/to/page，需要服务器的支持，因为它会修改浏览器的历史记录
+11.react-router-dom@5和现在的@6版本还是有区别的，目前只会@5的使用，Switch也只有5的版本有，可以只匹配一个
+12.路由拦截的一种方式可以是render 函数里面用三目运算符，验证失败就重定向redirect
+13.箭头函数要不你就直接写，要不写了大括号就要写return，不要又写大括号又不写return
+14.文件夹名字小写，组件名字大写
